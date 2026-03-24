@@ -31,7 +31,7 @@ public class UserController {
 
 
 
-    // NEW: Get current logged-in user's profile
+    // Get current logged-in user's profile
     @GetMapping("/profile")
     public ResponseEntity<?> getUserProfile() {
         try {

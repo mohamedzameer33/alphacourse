@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.*;
 
 
 @RestController
-@CrossOrigin(origins = "http://localhost:5173") // Your React frontend port
+@CrossOrigin(origins = "http://localhost:5173")
 public class CourseController {
 
     @Autowired

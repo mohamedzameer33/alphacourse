@@ -46,7 +46,6 @@ public class StudentService {
     }
 
     public void addstd(Student s) {
-        // No need to manually create 'new Student()' if it's already passed in
         studentrepo.save(s);
     }
 
@@ -57,8 +56,7 @@ public class StudentService {
 
     // NEW: Get student by username (name field)
     public Student getStudentByUsername(String username) {
-        // Assuming username corresponds to student name
-        // You might need to adjust this based on your actual database structure
+
         List<Student> allStudents = studentrepo.findAll();
         return allStudents.stream()
                 .filter(s -> s.getName().equalsIgnoreCase(username))
